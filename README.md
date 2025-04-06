@@ -20,8 +20,6 @@ or 	\DayZServer\mpmissions\(your mission name\expansion_ce\
     </type>
 	
 If you want to limit this to certain tiers or locations, your best option is to copy another item with the properties you want to replicate, and then copy-paste that and edit the name to "expBookItem".
-		
-	-----------------------------------
 
 If you want to add this to starting loot, one way is to adding it to the "StartingEquipSetup" routine in the init.c file. 	You can find this file in \DayZServer\mpmissions\(your mission name)\init.c Look for the first two lines that adds a bandage to starting gear in all vanilla maps, and insert the new line with expBookItem below that.
 	
