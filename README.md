@@ -7,9 +7,9 @@ Example Typesfile entry:
 Insert the relevant snippet below into your types xml file. This same basic setup should work for all maps.
 The types file(s) are normally called types.xml or expansion_types.xml, and are located in:
 
-\DayZServer\mpmissions\\(your mission name\db\
+\DayZServer\mpmissions\\(your mission name)\db\
 or
-\DayZServer\mpmissions\\(your mission name\expansion_ce\
+\DayZServer\mpmissions\\(your mission name)\expansion_ce\
 
 	<type name="expBookItem">
         <nominal>30</nominal>
