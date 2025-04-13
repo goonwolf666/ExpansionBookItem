@@ -6,7 +6,7 @@ class CfgPatches
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
-		{
+		{	
 			"DZ_Data",
 			"DZ_Scripts",
 			"DayZExpansion_Core_Scripts",
@@ -58,7 +58,7 @@ class cfgVehicles
 				class Health
 				{
 					hitpoints = 100;
-					healthLevels[] = {{1.0,{"DZ\gear\books\Data\book.rvmat"}},{0.7,{"DZ\gear\books\Data\book.rvmat"}},{0.5,{"DZ\gear\books\Data\book_damage.rvmat"}},{0.3,{"DZ\gear\books\Data\book_damage.rvmat"}},{0.0,{"DZ\gear\books\Data\book_destruct.rvmat"}}};
+					healthLevels[] = {{1.0,{"DZ\gear\books\Data\book.rvmat"}},{0.7,{"DZ\gear\books\Data\book.rvmat"}},{0.5,{"DZ\gear\navigation\data\Map_chernarus_damage.rvmat"}},{0.3,{"DZ\gear\books\Data\book_damage.rvmat"}},{0.0,{"DZ\gear\books\Data\book_destruct.rvmat"}}};
 				};
 			};
 		};
@@ -72,7 +72,7 @@ class cfgVehicles
 		rotationFlags=1;		
 		itemSize[]={1,1};
 		weight=1;
-
+		
 		hiddenSelections[]=
 		{
 			"camoGround"
