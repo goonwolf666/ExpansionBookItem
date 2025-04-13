@@ -11,17 +11,33 @@ The types file(s) are normally called types.xml or expansion_types.xml, and are 
 or
 \DayZServer\mpmissions\\(your mission name)\expansion_ce\
 
+<!-- suitable for official maps -->
 	<type name="expBookItem">
-        <nominal>30</nominal>
-        <lifetime>14400</lifetime>
-        <restock>0</restock>
-        <min>30</min>
-        <quantmin>-1</quantmin>
-        <quantmax>-1</quantmax>
-        <cost>100</cost>
-        <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
-        <category name="tools"/>
-    </type>
+        	<nominal>40</nominal>
+        	<lifetime>14400</lifetime>
+        	<restock>0</restock>
+        	<min>30</min>
+        	<quantmin>-1</quantmin>
+        	<quantmax>-1</quantmax>
+        	<cost>100</cost>
+        	<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0"/>
+        	<category name="tools"/>
+    	</type>
+
+<!-- suitable for Namalsk -->
+     	<type name="expBookItem">
+		<nominal>30</nominal>
+		<lifetime>2700</lifetime>
+		<restock>300</restock>
+		<min>25</min>
+		<quantmin>-1</quantmin>
+		<quantmax>-1</quantmax>
+		<cost>100</cost>
+		<flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="0" deloot="0" />
+		<category name="clothes" />
+		<tag name="civilian" />
+		<tag name="military" />
+	</type>
 
 If you want to limit this to certain tiers or locations, your best option is to copy another item with the properties you want to replicate, and then copy-paste that and edit the name to "expBookItem".
 
