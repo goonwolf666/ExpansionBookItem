@@ -1,11 +1,15 @@
 modded class MissionGameplay
 {
-	void OnBookTogglePressed()
+	override void OnBookTogglePressed()
 	{
 		if(!HasItemType("ExpBookItem"))	{// Early exit if player doesnt have the book
 			return;
 			}
 	
+		//bless you Salutesh
+		super.OnBookTogglePressed();
+		
+		/*
 		if (!GetExpansionSettings().GetBook(false).IsLoaded() || !GetExpansionSettings().GetBook().EnableBookMenu ){
 			return;
 			}
@@ -21,10 +25,10 @@ modded class MissionGameplay
 		else if (bookMenu && bookMenu.IsVisible())
 		{
 			uiManager.CloseMenu();
-		}
+		} */
 	}
 	
-	//bless you Zen
+	//bless you ZenAnarchist
 	bool HasItemType(string type)
 	{
 		PlayerBase m_Player; // Player to search
