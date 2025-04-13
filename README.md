@@ -11,7 +11,7 @@ The types file(s) are normally called types.xml or expansion_types.xml, and are 
 or
 \DayZServer\mpmissions\\(your mission name)\expansion_ce\
 
-```
+```XML
 <!-- suitable for official maps -->
 <type name="expBookItem">
 	<nominal>40</nominal>
@@ -25,7 +25,7 @@ or
         <category name="tools"/>
 </type>
 ```
-```
+```XML
 <!-- suitable for Namalsk -->
 <type name="expBookItem">
 	<nominal>30</nominal>
@@ -41,16 +41,18 @@ or
 	<tag name="military" />
 </type>
 ```
-If you want to limit this to certain tiers or locations, your best option is to copy another item with the properties you want to replicate, and then copy-paste that and edit the name to "expBookItem".
+For other maps, or if you want to limit the book to certain tiers or locations, your best option is to copy another item with the properties you want to replicate from your existing types and rename it to "expBookItem".
 
 If you want to add this to starting loot, one way is to adding it to the "StartingEquipSetup" routine in the init.c file.
 
 You can find this file in \DayZServer\mpmissions\(your mission name)\init.c
 
 Look for the first two lines that adds a bandage to starting gear in all vanilla maps, and insert the new line with expBookItem below that.
-	
-	// find these two lines in init.c first:
-	itemEnt = itemClothing.GetInventory().CreateInInventory( "BandageDressing" );
-	player.SetQuickBarEntityShortcut(itemEnt, 2);
-	// insert this new line below them:
-	itemEnt = itemClothing.GetInventory().CreateInInventory( "expBookItem" );
+
+```C++
+// find these two lines in init.c first:
+itemEnt = itemClothing.GetInventory().CreateInInventory( "BandageDressing" );
+player.SetQuickBarEntityShortcut(itemEnt, 2);
+// insert this new line below them:
+itemEnt = itemClothing.GetInventory().CreateInInventory( "expBookItem" );
+```
