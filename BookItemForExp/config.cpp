@@ -79,7 +79,7 @@ class cfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"Z:\BookItemForExp\Data\BookItem.paa"
+			"BookItemForExp\Data\BookItem.paa"
 		};
 	};
 };
